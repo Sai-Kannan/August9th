@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int i=1,j=1;
+	while(i!=6)
+	{   
+	    printf("    ");
+		printf("/");
+		if(i!=5)
+		{
+		   while(i>j)
+	       {
+	  	     printf(" ");
+	  		 j++;
+	   	   }
+	    }
+	    j=1;
+	    if(i>=5)
+	    {
+	      while(i>j)
+	      {
+	      	printf("_");
+	    	j++;
+	      } 
+	    }	
+		printf("\\");        
+		printf("\n\n"); //as c uses backlash as a escape character.
+		i++;            //to print that we need to give backslash infront of backslash.	
+    }
+}

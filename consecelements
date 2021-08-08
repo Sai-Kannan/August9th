@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int i,m;
+	printf("enter the value to print consecutive numbers :");
+	scanf("%d",&i);
+	for(int n=1;n<=i;n++)
+	{
+        m=n;
+	    here : if(m>0)
+	   {
+		 printf(" %d ",n);
+		m--;
+		goto here;
+	   } 
+	}
+}

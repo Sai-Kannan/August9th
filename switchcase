@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int num1,num2;
+	char ch;
+	printf("enter any two numbers : ");
+	scanf("%d%d",&num1,&num2);
+	printf("enter a for add and s for subtract : ");
+	scanf(" %c",&ch);//here space must be used infront of format specifier
+	                 //because when we press enter it takes enter as the input.
+	switch(ch)       //we can also use fflush(stdin).
+	{
+		case'a' :
+			printf("Addition result : %d",num1+num2);
+			break;
+		case's' :
+		    printf("subtracted result : %d",num1-num2);	
+		    break;
+		default:
+		    printf("default case - noaction");    
+	}
+}

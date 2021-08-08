@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int i,num,sum=0;
+	printf("enter any 10 numbers : ");
+	for(i=0;i<10;i++)
+	{
+	    scanf("%d",&num);
+	    if(num<1)
+	    {
+	     	continue;	
+	    }
+	    else
+	    sum=sum+num;
+	}
+	printf("sum is : %d",sum);
+}
